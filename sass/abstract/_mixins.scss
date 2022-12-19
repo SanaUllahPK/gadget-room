@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "./variables" as *;
+
+@mixin screen($size) {
+  @if (map.has-key($breakpoints, $size)) {
+    @media (min-width: map.get($breakpoints, $size)) {
+      @content;
+    }
+  }
+}
+
+// @mixin rounded {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   background-color: green;
+// }

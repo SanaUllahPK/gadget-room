@@ -1,0 +1,133 @@
+:root {
+  /* Zinc */
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  /* Amber */
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+  /* Blue */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  /* Other Variables */
+  --header-min-height: 9.2rem;
+  --icon-height: 1.8rem;
+  --icon-width: 2.4rem;
+  --box-shadow: 0 1rem 2.4rem -1rem rgba(0, 0, 0, 0.2);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-zinc-700);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 130rem;
+  margin-inline: auto;
+}
+
+.header {
+  min-height: var(--header-min-height);
+  box-shadow: var(--box-shadow);
+  padding: 2.4rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 6.7rem;
+  width: auto;
+}
+
+.top-nav {
+  flex: 1;
+}
+.top-nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.top-nav__item, .top-nav__link {
+  display: inline-block;
+}
+.top-nav__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1.2rem 2.4rem;
+  color: var(--color-zinc-700);
+}
+.top-nav__link:hover {
+  color: var(--color-amber-600);
+}
+
+.header-actions {
+  display: flex;
+  gap: 2rem;
+}
+
+.search,
+.cart,
+.user {
+  color: var(--color-zinc-800);
+}
+.search__icon,
+.cart__icon,
+.user__icon {
+  width: var(--icon-width);
+  height: var(--icon-height);
+}
+.search__icon:hover,
+.cart__icon:hover,
+.user__icon:hover {
+  color: var(--color-amber-600);
+}
+
+/* Abstract */
+/* Base */
+/* Layout */
+/* Pages */
+
+/*# sourceMappingURL=main.css.map */
