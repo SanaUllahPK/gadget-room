@@ -1,4 +1,10 @@
 :root {
+  /* Gray */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+
   /* Zinc */
   --color-zinc-50: #fafafa;
   --color-zinc-100: #f4f4f5;
@@ -40,6 +46,7 @@
   --icon-height: 1.8rem;
   --icon-width: 2.4rem;
   --box-shadow: 0 1rem 2.4rem -1rem rgba(0, 0, 0, 0.2);
+  --section-padding-y: 6.4rem 0;
 }
 
 *,
@@ -50,8 +57,13 @@
   box-sizing: inherit;
 }
 
+svg {
+  pointer-events: none;
+}
+
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
