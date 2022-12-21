@@ -21,7 +21,7 @@
   <body>
     <!-- Header Start -->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header-container desktop-header">
         <img src="public/img/logo.jpg" alt="Logo" class="logo" />
         <nav class="top-nav">
           <ul class="top-nav__list">
@@ -54,6 +54,50 @@
             <svg class="user__icon">
               <use xlink:href="public/svg/sprite.svg#icon-user" />
             </svg>
+          </div>
+        </div>
+      </div>
+      <div class="container tablet-header">
+        <div class="tablet-header__top">
+          <img src="public/img/logo.jpg" alt="Logo" class="logo" />
+          <button class="tablet-header-toggler">
+            <img src="public/svg/menu-icon.svg" alt="Menu Icon" />
+          </button>
+        </div>
+
+        <div class="tablet-header__body d-none">
+          <nav class="tablet-nav">
+            <ul class="tablet-nav__list">
+              <li class="tablet-nav__item">
+                <a href="#" class="tablet-nav__link">Home</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="#" class="tablet-nav__link">About</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="#" class="tablet-nav__link">Shop</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="#" class="tablet-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="search">
+              <svg class="search__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-search" />
+              </svg>
+            </div>
+            <div class="cart">
+              <svg class="cart__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </div>
+            <div class="user">
+              <svg class="user__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-user" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -96,7 +140,7 @@
                 <div class="text-align-left align-self-center">
                   <h1 class="h1 text-success"><b>Gadget</b> Room</h1>
                   <h3 class="h2">A place for best quality gadgets</h3>
-                  <p>
+                  <p class="mb-5">
                     Gadget Room is an eCommerce shop with latest and best
                     quality gadgets form around the world. Dive into the amazing
                     <a class="text-success" href="#">shop</a>
@@ -121,7 +165,7 @@
                 <div class="text-align-left">
                   <h1 class="h1">Proident occaecat</h1>
                   <h3 class="h2">Aliquip ex ea commodo consequat</h3>
-                  <p>
+                  <p class="mb-5">
                     You are permitted to use this Zay CSS template for your
                     commercial websites. You are
                     <strong>not permitted</strong> to re-distribute the template
@@ -146,7 +190,7 @@
                 <div class="text-align-left">
                   <h1 class="h1">Repr in voluptate</h1>
                   <h3 class="h2">Ullamco laboris nisi ut</h3>
-                  <p>
+                  <p class="mb-5">
                     We bring you 100% free CSS templates for your websites. If
                     you wish to support TemplateMo, please make a small
                     contribution via PayPal or tell your friends about our
@@ -483,7 +527,7 @@
     <script src="public/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script src="public/js/carousel.js"></script>
-    <script src="public/js/custom.js"></script>
+    <script src="public/js/header.js"></script>
     <!-- End Script -->
   </body>
 </html>

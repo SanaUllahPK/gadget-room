@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .footer-links {
@@ -21,6 +22,8 @@
   &__item,
   &__link {
     color: var(--color-gray-200);
+    white-space: nowrap;
+
     &:not(:last-child) {
       margin-bottom: 1.6rem;
     }
@@ -61,12 +64,14 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .social-links-list {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 1.6rem;
   flex-wrap: wrap;
 }

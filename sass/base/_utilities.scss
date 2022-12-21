@@ -1,6 +1,28 @@
+@use "../abstract/mixins" as *;
+
 .container {
   max-width: 130rem;
   margin-inline: auto;
+
+  @include screen(desktop-xl) {
+    max-width: 110rem;
+  }
+
+  @include screen(desktop-lg) {
+    max-width: 95rem;
+  }
+
+  @include screen(desktop) {
+    max-width: 80rem;
+  }
+
+  @include screen(tablet) {
+    max-width: 80vw;
+  }
+
+  @include screen(mobile) {
+    max-width: 90vw;
+  }
 }
 
 .bg-dark-100 {
@@ -22,4 +44,12 @@
 .breaker {
   background-color: var(--color-zinc-500);
   margin: 1.6rem 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
 }
