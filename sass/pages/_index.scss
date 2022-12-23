@@ -1,12 +1,6 @@
 @use "../abstract/mixins" as *;
 @use "../base/utilities" as *;
 
-.section-header-props {
-  max-width: 66rem;
-  margin-inline: auto;
-  text-align: center;
-}
-
 .categories {
   padding: var(--section-padding-y);
 
