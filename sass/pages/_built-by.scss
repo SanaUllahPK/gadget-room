@@ -1,0 +1,171 @@
+@use "../abstract/mixins" as *;
+
+.user-section {
+  position: relative;
+  background-color: var(--color-zinc-100);
+}
+
+.user-section:hover .user-container {
+  &__info {
+    transform: translateX(10rem);
+
+    @include screen(desktop-lg) {
+      transform: translateX(0);
+    }
+  }
+  &__img {
+    scale: 1.1;
+    box-shadow: 0 0 5rem rgba($color: #000000, $alpha: 0.3);
+    transform: translateX(-10rem);
+
+    @include screen(desktop-lg) {
+      transform: translateX(0);
+    }
+
+    @include screen(desktop) {
+      scale: 1;
+    }
+  }
+}
+
+.user-section:hover .dark-clip--darken {
+  background-color: var(--color-zinc-500);
+}
+
+.user-container {
+  padding: 10rem 0;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+
+  @include screen(desktop) {
+    flex-direction: column;
+  }
+
+  &__info {
+    transition: transform 0.3s;
+
+    @include screen(desktop-lg) {
+      width: 30rem;
+    }
+    @include screen(tablet) {
+      width: 100%;
+    }
+  }
+
+  &__info--to-dark &__name,
+  &__info--to-dark &__roll-num,
+  &__info--to-dark &__email {
+    &:hover {
+      color: var(--color-zinc-900);
+    }
+  }
+  &__name,
+  &__roll-num,
+  &__email {
+    transition: scale 0.3s, color 0.3s;
+
+    &:hover {
+      color: var(--color-zinc-50);
+      scale: 1.1;
+
+      @include screen(tablet) {
+        scale: 1.05;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 6rem;
+    font-weight: 300;
+    @include screen(desktop-lg) {
+      font-size: 4rem;
+    }
+  }
+
+  &__roll-num {
+    font-size: 4rem;
+    font-weight: 300;
+    @include screen(desktop-lg) {
+      font-size: 3rem;
+    }
+  }
+
+  &__email {
+    font-size: 2rem;
+    font-weight: 300;
+
+    @include screen(desktop-lg) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__img {
+    height: 50rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: 0% 0%;
+    box-shadow: 0 0 2rem 1rem rgba($color: #000000, $alpha: 0.3);
+    transition: scale 0.3s, box-shadow 0.3s, transform 0.3s;
+
+    @include screen(desktop) {
+      height: 50rem;
+    }
+
+    @include screen(tablet) {
+      width: 80vw;
+      height: auto;
+    }
+  }
+}
+
+.user-simple {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.8rem 0;
+  position: relative;
+  z-index: 999;
+
+  @include screen(desktop) {
+    flex-direction: column;
+  }
+
+  img {
+    height: 50rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: 0% 0%;
+
+    @include screen(tablet) {
+      width: 80vw;
+      height: auto;
+    }
+  }
+}
+
+.dark-clip {
+  position: absolute;
+  background-color: var(--color-zinc-300);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s;
+
+  &--top-left {
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+  }
+
+  &--bottom-right {
+    //   bottom
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+  &--bottom-left {
+    clip-path: polygon(0 100%, 0 0, 100% 100%);
+  }
+}

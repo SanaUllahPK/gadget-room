@@ -16,15 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
     />
 
-    <!-- Load map styles -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
-
-    <title>Gadget Room | Contact</title>
+    <title>Gadget Room | Developers</title>
   </head>
   <body>
     <!-- Header Start -->
@@ -127,77 +119,63 @@
     </header>
     <!-- Header End -->
 
-    <!-- Contact Heading Start -->
-    <section class="contact container">
-      <div class="contact__header">
-        <h1 class="contact__header-title">Contact Us</h1>
-        <p class="contact__header-description">
-          We value our customers and are always happy to help with any questions
-          or concerns you may have. If you need assistance with your order, have
-          a question about a product, or just want to provide feedback, don't
-          hesitate to contact us.
-        </p>
+    <!-- Sana Ullah Section Start -->
+    <section class="user-section">
+      <div class="dark-clip dark-clip--darken dark-clip--top-left"></div>
+      <div class="container user-container">
+        <div class="user-container__info">
+          <h1 class="user-container__name">Sana <strong>Ullah</strong></h1>
+          <p class="user-container__roll-num">
+            <strong>1470</strong>-BBA-ITM-036
+          </p>
+          <p class="user-container__email">
+            <strong>sanaullah.bbait1470</strong>@iiu.edu.pk
+          </p>
+        </div>
+        <img
+          src="/public/img/sanaullah.jpeg"
+          alt="Sana Ullah"
+          class="user-container__img"
+        />
       </div>
     </section>
-    <!-- Contact Heading End -->
+    <!-- Sana Ullah Section End -->
 
-    <!-- Start Map -->
-    <div id="mapid" class="map"></div>
-    <!-- Ena Map -->
-
-    <!-- Start Contact -->
-    <div class="container py-5">
-      <div class="row py-5">
-        <form class="col-md-9 m-auto" method="post" role="form">
-          <div class="form-row">
-            <div class="form-input">
-              <label class="form-input__label" for="inputname">Name</label>
-              <input
-                type="text"
-                class="form-input__input"
-                id="name"
-                name="name"
-                placeholder="Name"
-              />
-            </div>
-            <div class="form-input">
-              <label class="form-input__label" for="inputemail">Email</label>
-              <input
-                type="email"
-                class="form-input__input"
-                id="email"
-                name="email"
-                placeholder="Email"
-              />
-            </div>
-          </div>
-          <div class="form-input">
-            <label class="form-input__label" for="inputsubject">Subject</label>
-            <input
-              class="form-input__input"
-              type="text"
-              class="form-control mt-1"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-            />
-          </div>
-          <div class="form-input">
-            <label class="form-input__label" for="inputmessage">Message</label>
-            <textarea
-              class="form-input__textarea"
-              class="form-control mt-1"
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="8"
-            ></textarea>
-          </div>
-          <button type="submit" class="form-button">Let’s Talk</button>
-        </form>
+    <!-- Muhammad Amir Section Start -->
+    <section class="user-section">
+      <div class="dark-clip dark-clip--darken dark-clip--bottom-left"></div>
+      <div class="container user-container">
+        <img
+          src="/public/img/m-amir.jpeg"
+          alt="Muhammad Amir"
+          class="user-container__img"
+        />
+        <div class="user-container__info user-container__info--to-dark">
+          <h1 class="user-container__name">
+            Muhammad <strong>Usman Amir</strong>
+          </h1>
+          <p class="user-container__roll-num">
+            <strong>1467</strong>-/BBA-ITM/036
+          </p>
+          <p class="user-container__email">
+            <strong>muhammad.bbait1467</strong>@iiu.edu.pk
+          </p>
+        </div>
       </div>
-    </div>
-    <!-- End Contact -->
+    </section>
+    <!-- Muhammad Amir Section End -->
+
+    <section class="user-section">
+      <div class="dark-clip dark-clip--top-left"></div>
+      <div class="container user-simple">
+        <div class="user-simple__info">
+          <h1>Abdullah Kayani</h1>
+          <p>1471/BBA-ITM/036</p>
+          <p>abdullah.bbait1471@iiu.edu.pk</p>
+        </div>
+        <img src="/public/img/abdullah.jpeg" alt="Abdullah" />
+      </div>
+    </section>
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -333,12 +311,7 @@
     <script src="public/js/carousel.js"></script>
     <script src="public/js/header.js"></script>
     <script src="public/js/custom.js"></script>
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
-    <script src="public/js/map.js"></script>
+
     <!-- End Script -->
   </body>
 </html>
