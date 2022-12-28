@@ -422,22 +422,22 @@ body {
 .services__list-item__img--truck {
   --size: 10rem;
   --margin: 0;
-  -webkit-mask-image: url(/public/svg/truck.svg);
+  -webkit-mask-image: url("../../public/svg/truck.svg");
 }
 .services__list-item__img--exchange {
   --size: 7rem;
   --margin: 2rem;
-  -webkit-mask-image: url(/public/svg/exchange.svg);
+  -webkit-mask-image: url("../../public/svg/exchange.svg");
 }
 .services__list-item__img--percent {
   --size: 6rem;
   --margin: 2rem;
-  -webkit-mask-image: url(/public/svg/percent.svg);
+  -webkit-mask-image: url("../../public/svg/percent.svg");
 }
 .services__list-item__img--user {
   --size: 6rem;
   --margin: 2rem;
-  -webkit-mask-image: url(/public/svg/user.svg);
+  -webkit-mask-image: url("../../public/svg/user.svg");
 }
 .services__list-item p {
   margin-top: auto;
