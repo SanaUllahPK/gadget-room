@@ -9,6 +9,10 @@
     align-items: center;
     gap: 2rem;
     padding: 4.8rem 0;
+
+    @include screen(tablet) {
+      flex-direction: column;
+    }
   }
   &__text-box {
     color: #fff;
@@ -24,6 +28,10 @@
   &__img {
     display: inline-block;
     width: 30%;
+
+    @include screen(tablet) {
+      width: 100%;
+    }
   }
 }
 
@@ -116,5 +124,15 @@
     &-description {
       @extend .section-details;
     }
+  }
+}
+
+.carousel-custom {
+  &__row {
+    margin-inline: auto;
+    display: flex;
+  }
+  &__controls {
+    align-self: center;
   }
 }

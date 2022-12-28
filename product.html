@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/carousel.css" />
+    <link rel="stylesheet" href="public/css/main.css" />
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="public/css/slick.min.css" />
+    <link rel="stylesheet" href="public/css/slick-theme.min.css" />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+
+    <title>Gadget Room | Product</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container header-container desktop-header">
+        <img src="public/img/logo.jpg" alt="Logo" class="logo" />
+        <nav class="top-nav">
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="/index.html" class="top-nav__link">Home</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="/about.html" class="top-nav__link">About</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="/shop.html" class="top-nav__link">Shop</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="/contact.html" class="top-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="search">
+            <svg class="search__icon">
+              <use xlink:href="public/svg/sprite.svg#icon-search" />
+            </svg>
+          </div>
+          <div class="cart">
+            <svg class="cart__icon">
+              <use xlink:href="public/svg/sprite.svg#icon-cart" />
+            </svg>
+          </div>
+          <div class="user">
+            <svg class="user__icon">
+              <use xlink:href="public/svg/sprite.svg#icon-user" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="container tablet-header">
+        <div class="tablet-header__top">
+          <img src="public/img/logo.jpg" alt="Logo" class="logo" />
+          <button class="tablet-header-toggler">
+            <img src="public/svg/menu-icon.svg" alt="Menu Icon" />
+          </button>
+        </div>
+
+        <div class="tablet-header__body d-none">
+          <nav class="tablet-nav">
+            <ul class="tablet-nav__list">
+              <li class="tablet-nav__item">
+                <a href="/index.html" class="tablet-nav__link">Home</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="/about.html" class="tablet-nav__link">About</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="/shop.html" class="tablet-nav__link">Shop</a>
+              </li>
+              <li class="tablet-nav__item">
+                <a href="/contact.html" class="tablet-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="search">
+              <svg class="search__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-search" />
+              </svg>
+            </div>
+            <div class="cart">
+              <svg class="cart__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </div>
+            <div class="user">
+              <svg class="user__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-user" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Container Start -->
+    <section class="single-product-section">
+      <div class="container single-product-container">
+        <div class="product-img-container">
+          <img
+            src="public/img/proj/prod-1/img-1.jpg"
+            alt=""
+            class="product-img-container__main-img"
+            id="product-detail"
+          />
+          <div class="product-img-container__carousel">
+            <!--Start Controls-->
+            <div class="product-img-container__carousel-btn">
+              <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                <svg class="footer-link__icon">
+                  <use xlink:href="public/svg/sprite.svg#icon-chevron-left" />
+                </svg>
+              </a>
+            </div>
+            <!--End Controls-->
+            <!--Start Carousel Wrapper-->
+            <div
+              id="multi-item-example"
+              class="col-10 carousel slide carousel-multi-item"
+              data-bs-ride="carousel"
+            >
+              <!--Start Slides-->
+              <div class="carousel-inner product-links-wap" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-2.jpg"
+                          alt="Product Image 1"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-3.jpg"
+                          alt="Product Image 2"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-4.jpg"
+                          alt="Product Image 3"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-5.jpg"
+                          alt="Product Image 4"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-6.jpg"
+                          alt="Product Image 5"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-7.jpg"
+                          alt="Product Image 6"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-8.jpg"
+                          alt="Product Image 7"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-5.jpg"
+                          alt="Product Image 8"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          class="card-img img-fluid"
+                          src="public/img/proj/prod-1/img-2.jpg"
+                          alt="Product Image 9"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--/.Third slide-->
+              </div>
+              <!--End Slides-->
+            </div>
+            <!--End Carousel Wrapper-->
+            <!--Start Controls-->
+            <div class="product-img-container__carousel-btn">
+              <a href="#multi-item-example" role="button" data-bs-slide="next">
+                <svg class="footer-link__icon">
+                  <use xlink:href="public/svg/sprite.svg#icon-chevron-right" />
+                </svg>
+              </a>
+            </div>
+            <!--End Controls-->
+          </div>
+        </div>
+        <div class="product-details-container">
+          <h1 class="product-details__header">
+            Casio Analog-Digital Blue Dial Men's Watch-GA-100CB-1ADR
+          </h1>
+          <p class="product-details__price">$8545.00</p>
+          <div class="product-details__rating">
+            <div class="product-details__rating-icons">
+              <svg
+                class="product-details__rating-icon product-details__rating-icon--filled"
+              >
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg
+                class="product-details__rating-icon product-details__rating-icon--filled"
+              >
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg
+                class="product-details__rating-icon product-details__rating-icon--filled"
+              >
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg
+                class="product-details__rating-icon product-details__rating-icon--filled"
+              >
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product-details__rating-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+            </div>
+            <span class="product-details__rating-text">Rating 4.8</span> |
+            <span class="product-details__rating-comments">36 comments</span>
+          </div>
+          <p class="product-details__attribute">
+            Brand:
+            <span class="product-details__attribute-value">Casio</span>
+          </p>
+          <p class="product-details__attribute">Description:</p>
+          <p class="product-details__description">
+            Mineral glass magnetic resistant shock resistant 200-meter water
+            resistance case / bezel material: resin resin band led light auto
+            light switch, selectable illumination duration, afterglow world time
+            29 time zones (48 cities + coordinated universal time), daylight
+            saving on/off, home city / world time city swapping 1/1000-second
+            stopwatch measuring capacity: 99:59'59.999'' measuring modes:
+            elapsed time, lap time, split time others: speed (0 to 1998 units /
+            hour), distance input (0.0 to 99.9) mach indicator (speed exceeding
+            1225 units / hour) countdown timer measuring unit: 1 second
+            countdown range: 24 hours countdown start time setting range: 1
+            minute to 24 hours (1-minute increments and 1-hour increments)
+            other: auto-repeat 5 daily alarms (with 1 snooze alarm) hourly time
+            signal full auto-calendar (to year 2099) 12/24-hour format regular
+            timekeeping analog: 2 hands (hour, minute (hand moves every 20
+            seconds)) digital: hour, minute, second, pm, month, date, day
+            accuracy: ±15 seconds per month approx. battery life: 2 years on
+            cr1220 size of case: 55 × 51.2 × 16.9 mm total weight: 72 g
+            led:amber
+          </p>
+          <p class="product-details__attribute">
+            Available Color:
+            <span class="product-details__attribute-value">Black / Blue</span>
+          </p>
+          <p class="product-details__attribute">Specifications:</p>
+          <ul class="product-details__specification-list">
+            <li class="product-details__specification-item">Hight Quality</li>
+            <li class="product-details__specification-item">Easy to use</li>
+            <li class="product-details__specification-item">Water Proof</li>
+          </ul>
+
+          <div class="product-details__variants">
+            <div class="product-details__variants-size__box">
+              Size:
+              <ul class="product-details__variants-size__list">
+                <li class="product-details__variants-size__list-item">
+                  <input id="s" type="radio" name="size" value="s" />
+                  <label for="s"> S </label>
+                </li>
+                <li class="product-details__variants-size__list-item">
+                  <input id="M" type="radio" name="size" value="m" />
+                  <label for="M"> M </label>
+                </li>
+                <li class="product-details__variants-size__list-item">
+                  <input id="L" type="radio" name="size" value="l" />
+                  <label for="L"> L </label>
+                </li>
+                <li class="product-details__variants-size__list-item">
+                  <input id="XL" type="radio" name="size" value="xl" />
+                  <label for="XL">XL</label>
+                </li>
+              </ul>
+            </div>
+            <div class="product-details__quantity">
+              Quantity:
+              <button
+                class="product-details__quantity-btn quantity-decrease-btn"
+              >
+                -
+              </button>
+              <span class="product-details__quantity-text">0</span>
+              <button
+                class="product-details__quantity-btn quantity-increase-btn"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-details__actions">
+            <button class="product-details__actions-btn">Buy</button>
+            <button class="product-details__actions-btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Container End -->
+
+    <!-- Related Products Start -->
+    <section class="container related-products-container">
+      <h3 class="container related-products-container__heading">
+        Related Products
+      </h3>
+      <div id="carousel-related-product" class="related-products__list">
+        <div class="product">
+          <img
+            src="public/img/proj/related-product-1.jpg"
+            alt="Product 1"
+            class="product__img"
+          />
+          <ul class="product__details">
+            <li class="product__name">Garmin – Fenix 5X Sapphire</li>
+            <li class="product__sizes">M/L/X/XL</li>
+            <li class="product__rating">
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+            </li>
+            <li class="product__price">$2450.00</li>
+          </ul>
+          <div class="product__add-to-cart">
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-heart" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn see-in-shop-btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-eye" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="public/img/proj/related-product-2.jpg"
+            alt="Product 1"
+            class="product__img"
+          />
+          <ul class="product__details">
+            <li class="product__name">Insta360 One X2 Camera</li>
+            <li class="product__sizes">M/L</li>
+            <li class="product__rating">
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+            </li>
+            <li class="product__price">$999.00</li>
+          </ul>
+          <div class="product__add-to-cart">
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-heart" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn see-in-shop-btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-eye" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="public/img/proj/related-product-3.jpg"
+            alt="Product 1"
+            class="product__img"
+          />
+          <ul class="product__details">
+            <li class="product__name">ViewSonic M1+ Projector</li>
+            <li class="product__sizes">L/X</li>
+            <li class="product__rating">
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+            </li>
+            <li class="product__price">$360.00</li>
+          </ul>
+          <div class="product__add-to-cart">
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-heart" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn see-in-shop-btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-eye" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="public/img/proj/related-product-4.webp"
+            alt="Product 1"
+            class="product__img"
+          />
+          <ul class="product__details">
+            <li class="product__name">MegaSync Wireless Powerbank</li>
+            <li class="product__sizes">M</li>
+            <li class="product__rating">
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+            </li>
+            <li class="product__price">$440.00</li>
+          </ul>
+          <div class="product__add-to-cart">
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-heart" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn see-in-shop-btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-eye" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            src="public/img/proj/related-product-5.jpg"
+            alt="Product 1"
+            class="product__img"
+          />
+          <ul class="product__details">
+            <li class="product__name">Mini Bluetooth MP3 Player</li>
+            <li class="product__sizes">S</li>
+            <li class="product__rating">
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+              <svg class="product__rating-icon product__rating-icon--filled">
+                <use xlink:href="public/svg/sprite.svg#icon-star-full" />
+              </svg>
+            </li>
+            <li class="product__price">$150.00</li>
+          </ul>
+          <div class="product__add-to-cart">
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-heart" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn see-in-shop-btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-eye" />
+              </svg>
+            </button>
+            <button class="product__add-to-cart__btn">
+              <svg class="product__add-to-cart__btn-icon">
+                <use xlink:href="public/svg/sprite.svg#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Related Products End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links-container">
+          <ul class="footer-links">
+            <li class="footer-link__header footer-link__header--primary">
+              Gadget Room
+            </li>
+            <hr class="footer-link__breaker" />
+            <li class="footer-link__item">
+              <svg class="footer-link__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-location" />
+              </svg>
+              123 Consectetur at ligula 10660
+            </li>
+            <li class="footer-link__item">
+              <svg class="footer-link__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-phone" />
+              </svg>
+              <a href="tel:010-020-0340" class="footer-link__link"
+                >010-020-0340</a
+              >
+            </li>
+            <li class="footer-link__item">
+              <svg class="footer-link__icon">
+                <use xlink:href="public/svg/sprite.svg#icon-envelop" />
+              </svg>
+              <a href="mailto:info@company.com" class="footer-link__link"
+                >info@company.com</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-links">
+            <li class="footer-link__header">Products</li>
+            <hr class="footer-link__breaker" />
+            <li class="footer-link__item">
+              <a href="/shop.html" class="footer-link__link">Luxury</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/shop.html" class="footer-link__link">Sports Wear</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/shop.html" class="footer-link__link">Men's Shoes</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/shop.html" class="footer-link__link">Women's Shoes</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/shop.html" class="footer-link__link">Popular Dress</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/shop.html" class="footer-link__link">Gym Accessories</a>
+            </li>
+          </ul>
+          <ul class="footer-links">
+            <li class="footer-link__header">Further Info</li>
+            <hr class="footer-link__breaker" />
+            <li class="footer-link__item">
+              <a href="/index.html" class="footer-link__link">Home</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/about.html" class="footer-link__link">About Us</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/contact.html" class="footer-link__link"
+                >Shop Location</a
+              >
+            </li>
+            <li class="footer-link__item">
+              <a href="/contact.html" class="footer-link__link">FAQs</a>
+            </li>
+            <li class="footer-link__item">
+              <a href="/contact.html" class="footer-link__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="breaker" />
+        <div class="get-in-touch">
+          <ul class="social-links-list">
+            <li class="social-link__item">
+              <a href="#" class="social-link__link">
+                <svg class="social-link__icon">
+                  <use xlink:href="public/svg/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__item">
+              <a href="#" class="social-link__link">
+                <svg class="social-link__icon">
+                  <use xlink:href="public/svg/sprite.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__item">
+              <a href="#" class="social-link__link">
+                <svg class="social-link__icon">
+                  <use xlink:href="public/svg/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__item">
+              <a href="#" class="social-link__link">
+                <svg class="social-link__icon">
+                  <use xlink:href="public/svg/sprite.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="newsletter-form">
+            <input
+              placeholder="Email Address"
+              type="text"
+              class="newsletter-form__input"
+            />
+
+            <button class="newsletter-form__btn-submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Start Script -->
+    <script src="public/js/jquery-1.11.0.min.js"></script>
+    <script src="public/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/carousel.js"></script>
+    <script src="public/js/slick.min.js"></script>
+    <script src="public/js/header.js"></script>
+
+    <!-- Quantity increment/decrement script Start -->
+    <script>
+      $(function () {
+        const quantityTextEl = $(".product-details__quantity-text");
+        $(".quantity-decrease-btn").on("click", function (e) {
+          let quantity = Number(quantityTextEl.text());
+          if (--quantity > -1) {
+            quantityTextEl.text(quantity);
+          }
+        });
+        $(".quantity-increase-btn").on("click", function (e) {
+          let quantity = Number(quantityTextEl.text());
+          quantityTextEl.text(++quantity);
+        });
+      });
+    </script>
+    <!-- Quantity increment/decrement script End -->
+    <!-- Clone Products Script Start -->
+    <!-- <script>
+      $(function () {
+        const productEl = $(".product");
+        for (let i = 1; i < 11; i++) {
+          productEl.clone().appendTo(".products-list");
+        }
+      });
+    </script> -->
+    <!-- Clone Products Script End -->
+    <!-- Start Slider Script -->
+    <script>
+      $("#carousel-related-product").slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 3,
+            },
+          },
+        ],
+      });
+    </script>
+    <!-- End Slider Script -->
+    <!-- End Script -->
+  </body>
+</html>

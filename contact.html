@@ -16,7 +16,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
     />
 
-    <title>Gadget Room | About</title>
+    <!-- Load map styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <title>Gadget Room | Contact</title>
   </head>
   <body>
     <!-- Header Start -->
@@ -104,241 +112,77 @@
     </header>
     <!-- Header End -->
 
-    <!-- Hero Start -->
-    <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__text-box">
-          <h2 class="hero__heading">About Us</h2>
-          <p class="hero__details">
-            GadgetRoom was founded with the goal of bringing the latest and
-            greatest gadgets and appliances to our customers at affordable
-            prices. We are a team of technology enthusiasts who are always on
-            the lookout for the newest and most innovative products.
-          </p>
-        </div>
-        <img src="/public/img/about-hero.svg" alt="Hero" class="hero__img" />
-      </div>
-    </section>
-    <!-- Hero End -->
-
-    <!-- Services Start -->
-    <section class="container services">
-      <div class="services__header">
-        <h1 class="services__header-title">Our Services</h1>
-        <p class="services__header-description">
-          At GadgetRoom, we offer a range of services to ensure that our
-          customers have the best shopping experience possible. We also offer
-          fast and reliable shipping to ensure that you receive your orders in a
-          timely manner.
+    <!-- Contact Heading Start -->
+    <section class="contact container">
+      <div class="contact__header">
+        <h1 class="contact__header-title">Contact Us</h1>
+        <p class="contact__header-description">
+          We value our customers and are always happy to help with any questions
+          or concerns you may have. If you need assistance with your order, have
+          a question about a product, or just want to provide feedback, don't
+          hesitate to contact us.
         </p>
       </div>
-      <ul class="services__list">
-        <li class="services__list-item">
-          <div
-            class="services__list-item__img services__list-item__img--truck"
-          ></div>
-          <p>Delivery Services</p>
-        </li>
-        <li class="services__list-item">
-          <div
-            class="services__list-item__img services__list-item__img--exchange"
-          ></div>
-          <p>Shipping & Return</p>
-        </li>
-        <li class="services__list-item">
-          <div
-            class="services__list-item__img services__list-item__img--percent"
-          ></div>
-          <p>Promotion</p>
-        </li>
-        <li class="services__list-item">
-          <div
-            class="services__list-item__img services__list-item__img--user"
-          ></div>
-          <p>24 hours services</p>
-        </li>
-      </ul>
     </section>
-    <!-- Services End -->
+    <!-- Contact Heading End -->
 
-    <!-- Brand Start -->
-    <section class="brands">
-      <div class="container">
-        <div class="brands__header">
-          <h1 class="brands__header-title">Our Brands</h1>
-          <p class="branda__header-description">
-            At GadgetRoom, we are proud to offer products from some of the most
-            trusted and respected brands in the industry.
-          </p>
-        </div>
-      </div>
+    <!-- Start Map -->
+    <div id="mapid" class="map"></div>
+    <!-- Ena Map -->
 
-      <div class="tempaltemo-carousel carousel-custom container">
-        <div class="carousel-custom__row">
-          <!--Controls-->
-          <div class="carousel-custom__controls">
-            <a
-              class="h1"
-              href="#templatemo-slide-brand"
-              role="button"
-              data-bs-slide="prev"
-            >
-              <svg class="footer-link__icon">
-                <use xlink:href="public/svg/sprite.svg#icon-chevron-left" />
-              </svg>
-            </a>
-          </div>
-          <!--End Controls-->
-
-          <!--Carousel Wrapper-->
-          <div class="col">
-            <div
-              class="carousel slide carousel-multi-item pt-2 pt-md-0"
-              id="templatemo-slide-brand"
-              data-bs-ride="carousel"
-            >
-              <!--Slides-->
-              <div class="carousel-inner product-links-wap" role="listbox">
-                <!--First slide-->
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_01.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_02.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_03.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_04.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-                <!--End First slide-->
-
-                <!--Second slide-->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_01.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_02.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_03.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_04.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-                <!--End Second slide-->
-
-                <!--Third slide-->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_01.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_02.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_03.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                    <div class="col-3 p-md-5">
-                      <a href="#"
-                        ><img
-                          class="img-fluid brand-img"
-                          src="public/img/brand_04.png"
-                          alt="Brand Logo"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-                <!--End Third slide-->
-              </div>
-              <!--End Slides-->
+    <!-- Start Contact -->
+    <div class="container py-5">
+      <div class="row py-5">
+        <form class="col-md-9 m-auto" method="post" role="form">
+          <div class="form-row">
+            <div class="form-input">
+              <label class="form-input__label" for="inputname">Name</label>
+              <input
+                type="text"
+                class="form-input__input"
+                id="name"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-input">
+              <label class="form-input__label" for="inputemail">Email</label>
+              <input
+                type="email"
+                class="form-input__input"
+                id="email"
+                name="email"
+                placeholder="Email"
+              />
             </div>
           </div>
-          <!--End Carousel Wrapper-->
-
-          <!--Controls-->
-          <div class="carousel-custom__controls">
-            <a
-              class="h1"
-              href="#templatemo-slide-brand"
-              role="button"
-              data-bs-slide="next"
-            >
-              <svg class="footer-link__icon">
-                <use xlink:href="public/svg/sprite.svg#icon-chevron-right" />
-              </svg>
-            </a>
+          <div class="form-input">
+            <label class="form-input__label" for="inputsubject">Subject</label>
+            <input
+              class="form-input__input"
+              type="text"
+              class="form-control mt-1"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
           </div>
-          <!--End Controls-->
-        </div>
+          <div class="form-input">
+            <label class="form-input__label" for="inputmessage">Message</label>
+            <textarea
+              class="form-input__textarea"
+              class="form-control mt-1"
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="8"
+            ></textarea>
+          </div>
+          <button type="submit" class="form-button">Let’s Talk</button>
+        </form>
       </div>
-    </section>
-    <!-- Brand End -->
+    </div>
+    <!-- End Contact -->
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -468,6 +312,12 @@
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script src="public/js/carousel.js"></script>
     <script src="public/js/header.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="public/js/map.js"></script>
     <!-- End Script -->
   </body>
 </html>
